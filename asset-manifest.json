@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/textcomp/static/css/main.82f0f17e.css",
+    "main.js": "/textcomp/static/js/main.ec0fe414.js",
+    "index.html": "/textcomp/index.html",
+    "main.82f0f17e.css.map": "/textcomp/static/css/main.82f0f17e.css.map",
+    "main.ec0fe414.js.map": "/textcomp/static/js/main.ec0fe414.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82f0f17e.css",
+    "static/js/main.ec0fe414.js"
+  ]
+}
