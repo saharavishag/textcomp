@@ -1,0 +1,2 @@
+# textcomp
+Text compare tool
