@@ -2,7 +2,7 @@
   "name": "textcomp",
   "version": "1.0.0",
   "description": "A simple text comparison React app",
-  "homepage": "https://saharavishag.github.io/textcomp",
+  "homepage": "https://textcompare.thehackerista.com",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
