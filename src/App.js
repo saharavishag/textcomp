@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import ComparisonResult from './ComparisonResult';
+import AdComponent from './AdComponent';
 
 function App() {
   const [text1, setText1] = useState('');
@@ -24,7 +25,7 @@ function App() {
           <img src="/logo.jpg" alt="TextComp Logo" className="logo" />
           <h1>TextComp</h1>
         </div>
-        
+
         <div className="input-section">
           <div className="input-group">
             <label htmlFor="text1">Text 1:</label>
@@ -36,7 +37,7 @@ function App() {
               rows="6"
             />
           </div>
-          
+
           <div className="input-group">
             <label htmlFor="text2">Text 2:</label>
             <textarea
@@ -48,10 +49,12 @@ function App() {
             />
           </div>
         </div>
-        
+
         <button className="compare-button" onClick={handleCompare}>
           Compare Now
         </button>
+        
+        <AdComponent />
         
         {result && (
           <div className="result">
@@ -61,11 +64,11 @@ function App() {
             </p>
           </div>
         )}
-        
+
         {showDetailedComparison && (
-          <ComparisonResult 
-            text1={text1} 
-            text2={text2} 
+          <ComparisonResult
+            text1={text1}
+            text2={text2}
             isIdentical={result === 'identical input'}
           />
         )}
