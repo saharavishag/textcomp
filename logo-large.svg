@@ -1,0 +1,30 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-orange { fill: #FF6B35; }
+    </style>
+  </defs>
+  
+  <!-- Central horizontal bar -->
+  <rect x="12" y="20" width="24" height="6" class="logo-orange"/>
+  
+  <!-- Left side - lollipop structure -->
+  <!-- Upper circle -->
+  <circle cx="12" cy="12" r="3" class="logo-orange"/>
+  <!-- Lower circle -->
+  <circle cx="12" cy="36" r="3" class="logo-orange"/>
+  <!-- Upper vertical line -->
+  <rect x="10.5" y="12" width="3" height="8" class="logo-orange"/>
+  <!-- Lower vertical line -->
+  <rect x="10.5" y="28" width="3" height="8" class="logo-orange"/>
+  
+  <!-- Right side - plus structure -->
+  <!-- Upper horizontal line -->
+  <rect x="33" y="9" width="6" height="3" class="logo-orange"/>
+  <!-- Lower horizontal line -->
+  <rect x="33" y="36" width="6" height="3" class="logo-orange"/>
+  <!-- Upper vertical line -->
+  <rect x="34.5" y="9" width="3" height="11" class="logo-orange"/>
+  <!-- Lower vertical line -->
+  <rect x="34.5" y="28" width="3" height="11" class="logo-orange"/>
+</svg> 
