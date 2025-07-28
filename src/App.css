@@ -16,10 +16,24 @@
   width: 100%;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
 h1 {
   text-align: center;
   color: #333;
-  margin-bottom: 30px;
+  margin: 0;
   font-size: 2.5rem;
   font-weight: 700;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -131,6 +145,15 @@ h1 {
   .container {
     padding: 20px;
     margin: 10px;
+  }
+  
+  .header {
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 36px;
+    height: 36px;
   }
   
   .input-section {
