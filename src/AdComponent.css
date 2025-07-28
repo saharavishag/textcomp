@@ -29,6 +29,39 @@
   display: block;
 }
 
+.ad-fallback {
+  margin-top: 15px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  text-align: center;
+  color: #6c757d;
+}
+
+.ad-fallback p {
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  color: #495057;
+}
+
+.ad-fallback small {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.ad-fallback ul {
+  margin: 0;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.ad-fallback li {
+  margin-bottom: 5px;
+}
+
 /* Responsive ad sizing */
 @media (max-width: 768px) {
   .ad-container {
