@@ -20,7 +20,10 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Text Comparison App</h1>
+        <div className="header">
+          <img src="/logo.jpg" alt="TextComp Logo" className="logo" />
+          <h1>TextComp</h1>
+        </div>
         
         <div className="input-section">
           <div className="input-group">
