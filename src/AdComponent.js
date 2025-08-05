@@ -5,6 +5,22 @@ const AdComponent = () => {
   useEffect(() => {
     console.log('AdComponent: Starting ad initialization...');
     
+    // Test network connectivity first
+    const testConnection = () => {
+      return new Promise((resolve, reject) => {
+        const testImg = new Image();
+        testImg.onload = () => {
+          console.log('AdComponent: Network connectivity test passed');
+          resolve();
+        };
+        testImg.onerror = () => {
+          console.log('AdComponent: Network connectivity test failed');
+          reject(new Error('Network connectivity issue'));
+        };
+        testImg.src = 'https://www.google.com/favicon.ico';
+      });
+    };
+
     // Function to load AdSense script
     const loadAdSenseScript = () => {
       return new Promise((resolve, reject) => {
@@ -39,8 +55,11 @@ const AdComponent = () => {
       });
     };
 
-    // Load script and then initialize ad
-    loadAdSenseScript()
+    // Test connection first, then load AdSense
+    testConnection()
+      .then(() => {
+        return loadAdSenseScript();
+      })
       .then(() => {
         // Wait a bit for script to initialize
         setTimeout(() => {
@@ -80,10 +99,20 @@ const AdComponent = () => {
         <p>Ad loading...</p>
         <small>If you don't see an ad, it may be due to:</small>
         <ul>
+          <li>Network connectivity issues</li>
           <li>Ad blocker or privacy settings</li>
+          <li>Custom domain not approved in AdSense</li>
           <li>New AdSense account (1-2 weeks review period)</li>
           <li>Ad inventory not available</li>
         </ul>
+        <div className="ad-troubleshoot">
+          <strong>Troubleshooting:</strong>
+          <ul>
+            <li>Try disabling ad blockers</li>
+            <li>Check if your custom domain is approved in AdSense</li>
+            <li>Wait 24-48 hours for new ad units to activate</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
